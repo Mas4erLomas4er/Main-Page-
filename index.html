@@ -3,6 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<title>Company name - home page</title>
 </head>
@@ -13,25 +16,38 @@
 			<a href="">
 				<img src="images/logo.png" alt="" class="logo"> </a>
 			<!-- nav>ul(li>a) *6 -->
-			<nav>
-				<ul>
-					<li>
-						<a href="https://vk.com/club160258457">HTML & CSS</a>
-					</li>
-					<li>
-						<a href="https://andreychernetsky.github.io/pageHTML5/pageHTML.html">JavaScript & jQuery</a>
-					</li>
-					<li>
-						<a href="#">LESS & SASS</a>
-					</li>
-					<li>
-						<a href="#">Bootstrap</a>
-					</li>
-					<li>
-						<a href="#">GULP</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="navbar">
+				<a href="#home">Главная</a>
+				<a href="https://dimoh4uk.github.io/site/src/#">Новости</a>
+				<div class="dropdown">
+					<button class="dropbtn">Обочение &#x25bc; </button>
+					<div class="dropdown-content">
+						<div class="header">
+							<h2>Mega Menu</h2>
+						</div>
+						<div class="row">
+							<div class="column">
+								<h3>Category 1</h3>
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							</div>
+							<div class="column">
+								<h3>Category 2</h3>
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							</div>
+							<div class="column">
+								<h3>Category 3</h3>
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 		<!-- .main-content>(.main-content-img>img)+(article>h1)+(aside>p) -->
 		<div class="main-content ">
@@ -69,6 +85,26 @@
 					</div>
 				</div>
 			</div>
+			<div class="icon-bar">
+				<a href="#" class="facebook" title="FaceBook">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<a href="#" class="twitter" title="Twitter">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<a href="#" class="google" title="Google+">
+					<i class="fa fa-google"></i>
+				</a>
+				<a href="#" class="skype" title="rodomir31">
+					<i class="fa fa-skype"></i>
+				</a>
+				<a href="#" class="youtube" title="YouTube">
+					<i class="fa fa-youtube"></i>
+				</a>
+				<a href="https://vk.com/id459488160" class="vk" title="ВКонтакте">
+					<i class="fa  fa-vk"></i>
+				</a>
+			</div>
 			<article class="left">
 				<h1>Организация команды будущих программистов.</h1>
 				<p>Несмотря на лето и желание отдыхать все же напишу послание тем, кто хотел бы провести лето в обучении и приобретении
@@ -92,11 +128,36 @@
 					<a href="">здесь</a>.</p> -->
 			</article>
 			<aside class="right">
-				<h1>Lorem ipsum 2.</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati minima deleniti soluta, debitis sed harum ad deserunt
-					corporis illum dicta?</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quidem. Soluta commodi unde quis magnam eos, debitis odit
-					dolorum officiis!</p>
+				<div id="accordion">
+					<div class="accordion-title active test1">
+						<span>Заголовок 1</span>
+					</div>
+					<div class="accordion-cont">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti minima magnam earum quam necessitatibus veniam fugiat.
+							Quos asperiores, dicta, expedita, sit, quis consectetur praesentium quia temporibus placeat dignissimos mollitia vitae?</p>
+					</div>
+					<div class="accordion-title test2">
+						<span>Заголовок 2</span>
+					</div>
+					<div class="accordion-cont">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti minima magnam earum quam necessitatibus veniam fugiat.
+							Quos asperiores, dicta, expedita, sit, quis consectetur praesentium quia temporibus placeat dignissimos mollitia vitae?</p>
+					</div>
+					<div class="accordion-title test3">
+						<span>Заголовок 3</span>
+					</div>
+					<div class="accordion-cont">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti minima magnam earum quam necessitatibus veniam fugiat.
+							Quos asperiores, dicta, expedita, sit, quis consectetur praesentium quia temporibus placeat dignissimos mollitia vitae?</p>
+					</div>
+					<div class="accordion-title test4">
+						<span>Заголовок 4</span>
+					</div>
+					<div class="accordion-cont">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti minima magnam earum quam necessitatibus veniam fugiat.
+							Quos asperiores, dicta, expedita, sit, quis consectetur praesentium quia temporibus placeat dignissimos mollitia vitae?</p>
+					</div>
+				</div>
 			</aside>
 		</div>
 		<footer>
