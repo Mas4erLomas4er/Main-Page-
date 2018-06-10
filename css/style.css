@@ -28,7 +28,8 @@ body {
 }
 
 .wrapper {
-	width: 65%;
+	max-width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -475,6 +476,12 @@ p {
 	background-color: #000;
 }
 
+@media screen and (max-width: 600px) {
+	.icon-bar  {
+		display: none;
+	}
+}
+
 .facebook {
 	background: #3B5998;
 	color: white;
@@ -504,3 +511,41 @@ p {
 	background: #47569b;
 	color: white;
 }
+
+/* выплывайка слева start*/
+.left-container {
+	background: #929292;
+	transition: right 300ms ease;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100vw;
+	right: 100vw;
+}
+
+.left-container.show{
+	right: 0;
+}
+
+.canvas-container {
+	overflow: hidden;
+}
+
+.burger-button {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	background: red;
+	width: 50px;
+	height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+	.left-container .icon-bar  {
+		display: block;
+		position: relative;
+		transform:initial;
+		top: initial;
+	}
+}
+/* выплывайка слева end*/
