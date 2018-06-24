@@ -14,7 +14,7 @@ img {
 
 body {
 	background: #f8f8f8;
-	font-family: Arial;
+	font-family: 'PT Serif',Arial, serif;
 	color: #555;
 	line-height: 1.3;
 }
@@ -412,7 +412,7 @@ p {
 	width: 100%;
 	left: 0;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
+	z-index: 100;
 }
 
 .dropdown-content .header {
@@ -536,6 +536,7 @@ p {
 	bottom: 0;
 	width: 100vw;
 	right: 100vw;
+	z-index:100;
 }
 
 .left-container.show {
@@ -552,6 +553,7 @@ p {
 	right: 10px;
 	width: 50px;
 	height: 50px;
+	z-index: 101;
 }
 
 @media screen and (max-width: 950px) {
@@ -572,6 +574,7 @@ p {
 	background-color: #fff;
 	border-radius: 50%;
 	position: relative;
+	z-index: 101;
 }
 
 .menu-btn span,
